@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # **Day 1, Task 1: AWS Console & CLI Setup**
 
 ## **Objective**
