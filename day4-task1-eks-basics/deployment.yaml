@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-intern-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devops-intern-app
+  template:
+    metadata:
+      labels:
+        app: devops-intern-app
+    spec:
+      containers:
+        - name: web
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
